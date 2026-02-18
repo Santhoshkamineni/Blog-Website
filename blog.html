@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Website</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Blog</h1>
+    <button onclick="toggleForm()">New Post</button>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Create Post Form -->
+    <div id="formBox" class="form-box">
+      <h2>Create Blog Post</h2>
+      <input id="title" type="text" placeholder="Enter post title" />
+      <textarea id="content" rows="5" placeholder="Write your blog content..."></textarea>
+      <button class="publish-btn" onclick="addPost()">Publish</button>
+    </div>
+
+    <!-- Posts Container -->
+    <div id="posts" class="posts"></div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
